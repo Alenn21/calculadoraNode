@@ -1,0 +1,13 @@
+const calculadora = require('./calcu.js');
+const conversion = require ('./binarios.js');
+console.log("Operacion 1 Suma: ", calculadora(12,3,'suma'));
+console.log("Operacion 2 Resta: ", calculadora(12,3,'resta'));
+console.log("Operacion 3 Multiplicación: ", calculadora(12,3,'multiplicacion'));
+console.log("Operacion 4 Division: ", calculadora(12,3,'division'));
+console.log("Operacion 5 Modulo: ", calculadora(12,5,'modulo'));
+console.log("Operación 6 Binario a Decimal",conversion('1010', 'binario a decimal')); 
+console.log("Operación 7 Decimal a Binario",conversion(10, 'decimal a binario')); 
+console.log("Operación 8 Binario a Hexadecimal",conversion('1010', 'binario a hexadecimal'));
+console.log("Operación 9 Hexadecimal a Binario",conversion('a', 'hexadecimal a binario'));
+console.log("Operación 10 Decimal a Hexadecimal",conversion(255, 'decimal a hexadecimal')); 
+console.log("Operación 11 Hexadecimal a Decimal",conversion('ff', 'hexadecimal a decimal'));
